@@ -1,93 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | Full Stack Web Developer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdul Wahab | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">MyPortfolio</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <h1>Hello, I'm <span>Abdul Wahab</span></h1>
-        <h2>A Full Stack Web Developer</h2>
-        <p>I build modern, scalable, and user-friendly web applications from front to back.</p>
-        <a href="#projects" class="btn">View My Work</a>
-    </section>
+  <!-- ====== NAVBAR ====== -->
+  <nav>
+    <div class="logo">Abdul Wahab</div>
+    <div class="hamburger" id="hamburger">☰</div>
+    <ul id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>
-            I am a passionate Full Stack Web Developer with experience in creating dynamic
-            and responsive websites. I specialize in building web applications using
-            technologies like HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB.
-        </p>
-    </section>
+  <!-- ====== HERO SECTION ====== -->
+  <section class="hero" id="home">
+    <h1>Hello, I'm <span>Abdul Wahab</span></h1>
+    <p>A Full Stack Web Developer building modern, responsive and scalable web apps.</p>
+    <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+      View My Work
+    </button>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Frontend: HTML, CSS, JavaScript, React</li>
-            <li>Backend: Node.js, Express</li>
-            <li>Databases: MongoDB, MySQL</li>
-            <li>Tools: Git, GitHub, Docker</li>
-        </ul>
-    </section>
+  <!-- ====== ABOUT SECTION ====== -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate developer who thrives on creating efficient, user-centric
+      web experiences. With expertise in React, Node.js, Express, and MongoDB, I
+      deliver clean, maintainable code and seamless functionality—from UI to backend.
+    </p>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Project 1: Portfolio Website</h3>
-            <p>A personal portfolio showcasing my skills and projects.</p>
-            <a href="index.html" target="_blank">View Project</a>
+  <!-- ====== SKILLS SECTION ====== -->
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">Express</div>
+      <div class="skill">MongoDB</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">Git/GitHub</div>
+      <div class="skill">Docker</div>
+    </div>
+  </section>
+
+  <!-- ====== PROJECTS SECTION ====== -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/portfolio.png" alt="Portfolio Project">
+        <div class="content">
+          <h3>Portfolio Website</h3>
+          <p>Responsive portfolio with smooth navigation and modern UI.</p>
         </div>
-        <div class="project-card">
-            <h3>Project 2: E-commerce App</h3>
-            <p>Full-stack online store with user authentication and payment integration.</p>
-            <a href="project.html" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="images/ecommerce.png" alt="E-commerce App">
+        <div class="content">
+          <h3>E-commerce App</h3>
+          <p>Full-stack store with authentication and Stripe payments.</p>
         </div>
-        <div class="project-card">
-            <h3>Project 3: Blog Platform</h3>
-            <p>A content management system with CRUD functionality.</p>
-            <a href="blog.html" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="images/blog.png" alt="Blog Platform">
+        <div class="content">
+          <h3>Blog Platform</h3>
+          <p>CRUD blog app with user auth, comments, and MongoDB backend.</p>
         </div>
-        <div class="project-card">
-            <h2>project 4:Airport portal</h2>
-            <p>A web application for managing flight with payment integration</p>
-            <a href="airport.html" target="_blank">View project</a>
+      </div>
+      <div class="project-card">
+        <img src="images/airport.png" alt="Airport Portal">
+        <div class="content">
+          <h3>Airport Portal</h3>
+          <p>Flight management dashboard with payment gateway integration.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p>Let’s work together! Reach me at:</p>
-        <p>Email: <a href="mailto:youremail@example.com">wahabadetayo0@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/wahab211</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/adetayowahab</a></p>
-    </section>
+  <!-- ====== CONTACT SECTION ====== -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Email: <a href="mailto:wahabadetayo0@gmail.com">wahabadetayo0@gmail.com</a></p>
+    <p>
+      <a href="https://github.com/wahab211" target="_blank">GitHub</a> | 
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </p>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 No copyright | Full Stack Web Developer</p>
-    </footer>
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <p>© 2025 Abdul Wahab • Built with ❤️ & Code</p>
+  </footer>
+
+  <!-- ====== SCRIPT FOR NAVBAR TOGGLE ====== -->
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+      // change icon ☰ <-> ✖
+      hamburger.textContent = navLinks.classList.contains("show") ? "✖" : "☰";
+    });
+  </script>
+
 </body>
-
 </html>
