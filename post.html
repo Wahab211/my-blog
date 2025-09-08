@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #f9f9f9;
+        }
+
+        header {
+            background: grey;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+        }
+
+        article {
+            margin-bottom: 40px;
+        }
+
+        article h2 {
+            color: #ff6b35;
+            margin-bottom: 10px;
+        }
+
+        article p {
+            margin-bottom: 15px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .read-more {
+            background: #ff6b35;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .read-more:hover {
+            background: #e4ebec;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="blog.html" class="active">Home</a>
+
+            <header>
+                <h1>📖 My Blog</h1>
+                <p>Web Development & Programming Guides</p>
+            </header>
+
+            <div class="container">
+
+                <!-- Article 1 -->
+                <article>
+                    <h2>Getting Started as a Web Developer</h2>
+                    <p>The web is everywhere — powering social networks, online stores, and the apps we use daily...</p>
+                    <div class="hidden">
+                        <p>Becoming a web developer allows you to create these experiences. Web development has two main
+                            parts:
+                            front-end (what users see) and back-end (the server and database).</p>
+                        <p>To get started, you should learn the basics: HTML for structure, CSS for design, and
+                            JavaScript for
+                            interactivity. Once you’re comfortable, explore frameworks and tools that make development
+                            faster
+                            and easier. Most importantly, practice by building projects, no matter how small.</p>
+                        <p>Consistency and patience are key. Start small, improve gradually, and you’ll be amazed at how
+                            far you
+                            can go in just a few months.</p>
+                    </div>
+                    <button class="read-more">Read More</button>
+                </article>
+
+                <!-- Article 2 -->
+                <article>
+                    <h2>Top 10 Tips for Learning Programming</h2>
+                    <p>Learning to code can feel overwhelming at first, but with the right approach, it becomes much
+                        easier...
+                    </p>
+                    <div class="hidden">
+                        <ol>
+                            <li>Start with one language and stick with it.</li>
+                            <li>Practice daily, even if it’s just 30 minutes.</li>
+                            <li>Build real projects as you learn.</li>
+                            <li>Use free resources like MDN, YouTube, and docs.</li>
+                            <li>Join online communities and coding groups.</li>
+                            <li>Don’t be afraid of making mistakes — debugging is learning.</li>
+                            <li>Read other people’s code to see different approaches.</li>
+                            <li>Break problems into smaller, manageable parts.</li>
+                            <li>Stay curious — technology changes fast.</li>
+                            <li>Be patient and enjoy the process.</li>
+                        </ol>
+                    </div>
+                    <button class="read-more">Read More</button>
+                </article>
+
+                <!-- Article 3 -->
+                <article>
+                    <h2>How to Build Responsive Websites</h2>
+                    <p>A responsive website adapts to different screen sizes (desktop, tablet, mobile). This is crucial
+                        because
+                        most people now browse the web on their phones...</p>
+                    <div class="hidden">
+                        <p>Here are some key steps:</p>
+                        <ul>
+                            <li>Use flexible grid layouts with CSS Grid or Flexbox.</li>
+                            <li>Set images and videos to <code>max-width: 100%</code> so they resize automatically.</li>
+                            <li>Apply media queries (e.g., <code>@media (max-width: 768px)</code>) to adjust styles for
+                                smaller
+                                screens.</li>
+                            <li>Test your website on different devices and browsers.</li>
+                        </ul>
+                        <p>By mastering responsiveness, you ensure your websites are user-friendly and professional
+                            across all
+                            devices.</p>
+                    </div>
+                    <button class="read-more">Read More</button>
+                </article>
+                <article>
+                    <h2>$5B BTC whale keeps stacking ETH</h2>
+                    <p>He just moved $1.1B BTC to a new wallet and is buying ETH through</p>
+                    <div class="hidden">
+                        <p> Hyperunit/HL. Last week he grabbed
+                            $2.5B worth of ETH and keeps adding to his position
+
+                            Meanwhile, another BTC whale sold 2,000 BTC (~$215M) over the past 4 hours and scooped
+                            48,942 ETH
+                            (~$215M) on spot
+
+                            🔸 Big rotations like this could shake the market what do you think, are whales prepping for
+                            the
+                            next
+                            leg up</p>
+                    </div>
+                    <button class="read-more">Read More</button>
+                </article>
+                <article>
+                    <h2>How bitcoin will explode if Fed cut rate today</h2>
+                    <p>Bitcoin is on the last support zone for it to bounce back</p>
+                    <div class="hidden">
+                        <p>If the Fed cuts rates today, bitcoin could see a significant price increase. Historically,
+                            rate cuts
+                            have led to increased liquidity in the market, which often benefits risk assets like
+                            bitcoin.
+
+                            Currently, bitcoin is hovering around a critical support level. If it holds this zone and
+                            the Fed
+                            announces a rate cut, we could see a strong bullish reaction as investors seek alternative
+                            stores of
+                            value.
+
+                            However, if the support fails, we might see further downside before any potential recovery.
+                            Keep an
+                            eye on both the Fed's decision and bitcoin's price action in the coming days.</p>
+                    </div>
+                    <button class="read-more">Read More</button>
+                </article>
+
+            </div>
+
+            <script>
+                document.querySelectorAll(".read-more").forEach(button => {
+                    button.addEventListener("click", () => {
+                        const hiddenContent = button.previousElementSibling;
+                        hiddenContent.classList.toggle("hidden");
+
+                        // Change button text
+                        if (hiddenContent.classList.contains("hidden")) {
+                            button.textContent = "Read More";
+                        } else {
+                            button.textContent = "Read Less";
+                        }
+                    });
+                });
+            </script>
+
+</body>
+
+</html>
