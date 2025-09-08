@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="blog.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">MyBlog</a>
+        <div class="nav-links">
+            <a href="blog.html" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="hamburger">☰</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to My Blog</h1>
+        <h2>God Mark Functionality</h2>
+        <p>Sharing thoughts, tutorials, and stories every week.</p>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog-section">
+        <h2>Latest Posts</h2>
+        <div class="blog-grid">
+            <!-- Post 1 -->
+            <article class="blog-card">
+                <img src="https://picsum.photos/400/250?random=1" alt="Blog 1">
+                <div class="blog-content">
+                    <h3>Getting Started with Web Development</h3>
+                    <p>Learn the basics of HTML, CSS, and JavaScript to kickstart your journey as a web developer...</p>
+                    <a href="post.html?id=1" class="btn">Read More</a>
+                </div>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="blog-card">
+                <img src="https://picsum.photos/400/250?random=2" alt="Blog 2">
+                <div class="blog-content">
+                    <h3>Top 10 Tips for Learning Programming</h3>
+                    <p>Discover helpful tips that will speed up your coding journey and make learning fun...</p>
+                    <a href="post.html?id=2" class="btn">Read More</a>
+                </div>
+            </article>
+
+            <!-- Post 3 -->
+            <article class="blog-card">
+                <img src="https://picsum.photos/400/250?random=3" alt="Blog 3">
+                <div class="blog-content">
+                    <h3>How to Build Responsive Websites</h3>
+                    <p>Explore the techniques and tools needed to create beautiful, mobile-friendly websites...</p>
+                    <a href="post.html?id=3" class="btn">Read More</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <img src="https://picsum.photos/400/250?random=3" alt="Blog 4">
+                <div class="blog-content">
+                    <h3>$5B BTC whale keeps stacking ETH</h3>
+                    <p>He just moved $1.1B BTC to a new wallet and is buying ETH through</p>
+                    <a href="post.html?id=4" class="btn">Read More</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <img src="" alt="Blog 5">
+                <div class="blog-content">
+                    <h3>How bitcoin will explode if Fed cut rate today</h3>
+                    <p>Bitcoin is on the last support zone for it to bounce back...</p>
+                    <a href="post.html?id=5" class="btn">Read More</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <img src="https://picsum.photos/400/250?random=3" alt="Blog 6">
+                <div class="blog-content">
+                    <h3>How will the US rate cut affect the Economy</h3>
+                    <p>The Fed rate cut is debating on cutting the tarriff...</p>
+                    <a href="post.html?id=6" class="btn">Read More</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MyBlog | All Rights Reserved</p>
+    </footer>
+
+    <!-- JS for Mobile Menu -->
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+        });
+    </script>
+</body>
+
+</html>
