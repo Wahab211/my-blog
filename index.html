@@ -1,130 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abdul Wahab | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdul Wahab | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- ====== NAVBAR ====== -->
-  <nav>
-    <div class="logo">Abdul Wahab</div>
-    <div class="hamburger" id="hamburger">☰</div>
-    <ul id="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- ====== NAVBAR ====== -->
+    <nav>
+        <div class="logo">My Portfolio</div>
+        <div class="hamburger" id="hamburger">☰</div>
+        <ul id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-  <!-- ====== HERO SECTION ====== -->
-  <section class="hero" id="home">
-    <h1>Hello, I'm <span>Abdul Wahab</span></h1>
-    <p>A Full Stack Web Developer building modern, responsive and scalable web apps.</p>
-    <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
-      View My Work
-    </button>
-  </section>
+    <!-- ====== HERO SECTION ====== -->
+    <section class="hero" id="home">
+        <h1>Hello, I'm <span>Abdul Wahab</span></h1>
+        <p>A Full Stack Web Developer building modern, responsive and scalable web apps.</p>
+        <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+            View My Work
+        </button>
+    </section>
 
-  <!-- ====== ABOUT SECTION ====== -->
-  <section class="about" id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a passionate developer who thrives on creating efficient, user-centric
-      web experiences. With expertise in React, Node.js, Express, and MongoDB, I
-      deliver clean, maintainable code and seamless functionality—from UI to backend.
-    </p>
-  </section>
+    <!-- ====== ABOUT SECTION ====== -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+            I’m a passionate developer who thrives on creating efficient, user-centric
+            web experiences. With expertise in React, Node.js, Express, and MongoDB, I
+            deliver clean, maintainable code and seamless functionality—from UI to backend.
+        </p>
+    </section>
 
-  <!-- ====== SKILLS SECTION ====== -->
-  <section class="skills" id="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill">HTML</div>
-      <div class="skill">CSS</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">React</div>
-      <div class="skill">Node.js</div>
-      <div class="skill">Express</div>
-      <div class="skill">MongoDB</div>
-      <div class="skill">MySQL</div>
-      <div class="skill">Git/GitHub</div>
-      <div class="skill">Docker</div>
-    </div>
-  </section>
-
-  <!-- ====== PROJECTS SECTION ====== -->
-  <section class="projects" id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="images/portfolio.png" alt="Portfolio Project">
-        <div class="content">
-          <h3>Portfolio Website</h3>
-          <p>Responsive portfolio with smooth navigation and modern UI.</p>
+    <!-- ====== SKILLS SECTION ====== -->
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">Express</div>
+            <div class="skill">MongoDB</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">Git/GitHub</div>
+            <div class="skill">Docker</div>
         </div>
-      </div>
-      <div class="project-card">
-        <img src="images/ecommerce.png" alt="E-commerce App">
-        <div class="content">
-          <h3>E-commerce App</h3>
-          <p>Full-stack store with authentication and Stripe payments.</p>
+    </section>
+
+    <!-- ====== PROJECTS SECTION ====== -->
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="first-project.png" alt="Portfolio Project">
+                <div class="content">
+                    <h3>Portfolio Website</h3>
+                    <p>Responsive portfolio with smooth navigation and modern UI.</p>
+                    <div class="project a">
+                        <a href="index.html" target="_blank">view project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="web-images.png" alt="E-commerce App">
+                <div class="content">
+                    <h3>E-commerce App</h3>
+                    <p>Full-stack store with authentication and Stripe payments.</p>
+                    <div class="project a">
+                        <a href="project.html" target="_blank">view project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="blog-post.png" alt="Blog Platform">
+                <div class="content">
+                    <h3>Blog Platform</h3>
+                    <p>CRUD blog app with user auth, comments, and MongoDB backend.</p>
+                    <div class="project a">
+                        <a href="blog.html" target="_blank">view project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/airport.png" alt="Airport Portal">
+                <div class="content">
+                    <h3>Airport Portal</h3>
+                    <p>Flight management dashboard with payment gateway integration.</p>
+                    <div class="project a">
+                        <a href="airport.html" target="_blank">view project</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="project-card">
-        <img src="images/blog.png" alt="Blog Platform">
-        <div class="content">
-          <h3>Blog Platform</h3>
-          <p>CRUD blog app with user auth, comments, and MongoDB backend.</p>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="images/airport.png" alt="Airport Portal">
-        <div class="content">
-          <h3>Airport Portal</h3>
-          <p>Flight management dashboard with payment gateway integration.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ====== CONTACT SECTION ====== -->
-  <section class="contact" id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <p>Email: <a href="mailto:wahabadetayo0@gmail.com">wahabadetayo0@gmail.com</a></p>
-    <p>
-      <a href="https://github.com/wahab211" target="_blank">GitHub</a> | 
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-    </p>
-  </section>
+    <!-- ====== CONTACT SECTION ====== -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit"><a href="mailto:wahabadetayo0@gmail.com">Send Message</a></button>
+        </form>
+        <p>Email: <a href="mailto:wahabadetayo0@gmail.com">wahabadetayo0@gmail.com</a></p>
+        <p>
+            <a href="https://github.com/wahab211" target="_blank">GitHub</a> |
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </p>
+    </section>
 
-  <!-- ====== FOOTER ====== -->
-  <footer>
-    <p>© 2025 Abdul Wahab • Built with ❤️ & Code</p>
-  </footer>
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <p>© 2025 Abdul Wahab • Built with ❤️ & Code</p>
+    </footer>
 
-  <!-- ====== SCRIPT FOR NAVBAR TOGGLE ====== -->
-  <script>
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("nav-links");
+    <!-- ====== SCRIPT FOR NAVBAR TOGGLE ====== -->
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
 
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("show");
-      // change icon ☰ <-> ✖
-      hamburger.textContent = navLinks.classList.contains("show") ? "✖" : "☰";
-    });
-  </script>
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+            // change icon ☰ <-> ✖
+            hamburger.textContent = navLinks.classList.contains("show") ? "✖" : "☰";
+        });
+    </script>
 
 </body>
+
 </html>
+
